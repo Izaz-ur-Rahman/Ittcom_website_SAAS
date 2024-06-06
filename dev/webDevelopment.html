@@ -17,8 +17,8 @@
     <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
 </head>
 
-<body class="bg-soft-primary">
-    <div class="content-wrapper">
+<body class="bg-soft-primary" >
+    <div class="content-wrapper" id="ittcom">
         <header class="wrapper bg-soft-primary">
 
             <!-- /.alert -->
@@ -84,16 +84,17 @@
                                     <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">IT
                                         Infrastructure</a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="dropdown-item" href="#">Solution I</a></li>
-                                        <li class="nav-item"><a class="dropdown-item" href="#">Solution II</a></li>
+                                        <li class="nav-item "><a class="dropdown-item " href="Infrastructure.html">Infrastruction-Solution </a></li>
+                                        <li class="nav-item "><a class="dropdown-item " href="smart_solution.html">Smart-Solution </a></li>
+
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white" href="#"
                                         data-bs-toggle="dropdown">Cyber Security</a>
                                     <ul class="dropdown-menu ">
-                                        <li class="nav-item "><a class="dropdown-item " href="#">IT Solution I</a></li>
-                                        <li class="nav-item"><a class="dropdown-item" href="#">IT Solution II</a></li>
+
+                                        <li class="nav-item"><a class="dropdown-item" href="preventive_solution.html">Preventive-Solution</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown dropdown-mega">
@@ -101,11 +102,10 @@
 
                                     <!--/.dropdown-menu -->
                                 </li>
-                                <li class="nav-item dropdown dropdown-mega">
-                                    <a class="nav-link text-white" href="#" data-bs-toggle="dropdown">Resources</a>
-
-                                    <!--/.dropdown-menu -->
-                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="aboutUs.html" data-bs-toggle="">About-Us</a>
+                                      <!--/.dropdown-menu -->
+                                  </li>
 
 
                             </ul>
@@ -136,7 +136,7 @@
                     <div class="navbar-other w-100 d-flex ms-auto">
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <li class="nav-item d-none d-md-block">
-                                <a href="contact2.html" class="btn  rounded-pill allbtn" target="_blank">Contact Us</a>
+                                <a href="contact2.html" class="btn  allbtn" target="_blank">Contact Us</a>
                             </li>
                             <li class="nav-item d-lg-none">
                                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -152,33 +152,62 @@
 
         </header>
         <!-- /header -->
-        <section class="wrapper  wrapperbg" style="width: 100%; ">
+         <section class="wrapper  wrapperbg " style="width: 100%; ">
             <div class="container pt-8 pt-md-10 pb-10 pb-md-12 margin_adjustment2">
-              <div class="row gy-10 gy-md-13 gy-lg-0 align-items-center">
-                <!-- Content Column -->
-                <div class="col-lg-6 offset-lg-1 col-xxl-5 order-lg-2 text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
-                  <h1 class="display-1 mb-5"><span class="unique_color">Website Development</span> Services In the UAE</h1>
-                  <p class="lead fs-24 lh-sm mb-7 px-md-10 px-lg-0 textColor">A comprehensive website development service In the UAE tailored to meet your customers' needs and drive online growth</p>
-                  <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-                    <span><a href="#" class="btn btn-lg rounded-pill me-2 allbtn">See My Works</a></span>
-                    <span><a href="#" class="btn btn-lg rounded-pill allbtn">Contact Me</a></span>
-                  </div>
-                </div>
-                <!--/ Content Column -->
+                <div class="row gy-10 gy-md-13 gy-lg-0 align-items-center">
+                    <!-- Content Column -->
+                    <div class="col-lg-6 offset-lg-1 col-xxl-5 order-lg-2 text-center text-lg-start"
+                        data-cues="slideInDown" data-group="page-title" data-delay="600">
+                        <h1 class="display-1 mb-5"><span class="unique_color">Website Development</span> Services In the
+                            UAE</h1>
+                        <p class="lead fs-24 lh-sm mb-7 px-md-10 px-lg-0 textColor">A comprehensive website development
+                            service In the UAE tailored to meet your customers' needs and drive online growth</p>
+                        <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown"
+                            data-group="page-title-buttons" data-delay="900">
+                            <span><a href="#" class="btn btn-lg  scroll rounded-xl allbtn" onclick="openModal()">Schedule Demo Call</a></span>
 
-                <!-- Image Column -->
-                <div class="col-md-8 col-lg-5 d-flex position-relative mx-auto order-lg-1" data-cues="slideInDown" data-group="header">
-                  <div class="img-mask hero_img2" ><img src="./assets/img/demos/Web-Devlpmnt-main-image.png" srcset="./assets/img/demos/Web-Devlpmnt-main-image.png 2x" alt="" /></div>
+                        </div>
+                          <!--     modal         -->
+              <div id="myModal" class="modal my-10">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 style="text-align: center;">Share Your Needs</h2>
+                    <form id="needsForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone Number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="4" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
-                <!--/ Image Column -->
-              </div>
-              <!-- /.row -->
+            </div>
+
+                    </div>
+                    <!--/ Content Column -->
+
+                    <!-- Image Column -->
+                    <div class="col-md-8 col-lg-5 d-flex position-relative mx-auto order-lg-1" data-cues="slideInDown"
+                        data-group="header">
+                        <div class="img-mask hero_img2"><img src="./assets/img/demos/Web-Devlpmnt-main-image.png"
+                                srcset="./assets/img/demos/Web-Devlpmnt-main-image.png 2x" alt="" /></div>
+                    </div>
+                    <!--/ Image Column -->
+                </div>
+                <!-- /.row -->
             </div>
             <!-- /.container -->
-          </section>
+        </section>
 
-    <!-- /section -->
-         <section class="wrapper bg-light">
+        <!-- /section -->
+        <section class="wrapper bg-light my_top_margin8">
             <div class="container py-14 py-md-16">
                 <div class="row text-center">
                     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -196,7 +225,7 @@
                                     class="svg-inject icon-svg icon-svg-sm text-aqua me-4" alt="" />
                             </div>
                             <div>
-                                <h4 class="mb-1 textColor">Enterprise Custom Website</h4>
+                                <h4 class="mb-1 unique_color">Enterprise Custom Website</h4>
                                 <p class="mb-0 textColor my_para">We develop enterprise websites that reflect your brand
                                     identity, accommodate your unique ideas, data, and requirements, and provide a
                                     splendid user experience.</p>
@@ -211,7 +240,7 @@
                                     class="svg-inject icon-svg icon-svg-sm text-yellow me-4" alt="" />
                             </div>
                             <div>
-                                <h4 class="mb-1 textColor">Content Management System</h4>
+                                <h4 class="mb-1 unique_color">Content Management System</h4>
                                 <p class="mb-0 textColor my_para">Our Custom CMS Streamlines your content creation,
                                     management, and publishing allowing you to have complete control of your website.
                                 </p>
@@ -226,7 +255,7 @@
                                     class="svg-inject icon-svg icon-svg-sm text-red me-4" alt="" />
                             </div>
                             <div>
-                                <h4 class="mb-1 textColor">Website Redesign</h4>
+                                <h4 class="mb-1 unique_color">Website Redesign</h4>
                                 <p class="mb-0 textColor my_para">We redesign your website's layout, aesthetics, and
                                     user experience to enhance engagement, accessibility, and conversion rates.</p>
                             </div>
@@ -240,7 +269,7 @@
                                     class="svg-inject icon-svg icon-svg-sm text-pink me-4" alt="" />
                             </div>
                             <div>
-                                <h4 class="mb-1 textColor">E-Commerce Website</h4>
+                                <h4 class="mb-1 unique_color">E-Commerce Website</h4>
                                 <p class="mb-0 textColor my_para">From user-friendly interfaces to secure payment
                                     gateways, we create seamless shopping experiences that drive sales and foster
                                     customer loyalty.</p>
@@ -255,7 +284,7 @@
                                     class="svg-inject icon-svg icon-svg-sm text-green me-4" alt="" />
                             </div>
                             <div>
-                                <h4 class="mb-1 textColor">Consulting</h4>
+                                <h4 class="mb-1 unique_color">Consulting</h4>
                                 <p class="mb-0 textColor my_para">We provide strategic guidance and actionable insights
                                     to help you make informed decisions, optimize performance, and achieve your digital
                                     objectives.</p>
@@ -270,7 +299,7 @@
                                     class="svg-inject icon-svg icon-svg-sm text-purple me-4" alt="" />
                             </div>
                             <div>
-                                <h4 class="mb-1 textColor">Consulting</h4>
+                                <h4 class="mb-1 unique_color">Consulting</h4>
                                 <p class="mb-0 textColor my_para">We’re aware of the IT ups and downs and consult you to
                                     follow the more scalable, cost-efficient roadmap for modernization.</p>
                             </div>
@@ -290,28 +319,38 @@
                 <div class="row gx-lg-8 gx-xl-12 gy-6 mb-10">
                     <div class="col-lg-6">
                         <h2 class="display-2 mb-3">Optimize Your Website to Connect <br>with Your Target Audience</h2>
-                        <p class="lead my_para fs-18 mb-5 textColor">Optimizing your website involves strategic planning and meticulous execution. Our approach focuses on enhancing user experience and needs, optimizing performance, and driving online conversion.</p>
+                        <p class="lead my_para fs-18 mb-5 textColor">Optimizing your website involves strategic planning
+                            and meticulous execution. Our approach focuses on enhancing user experience and needs,
+                            optimizing performance, and driving online conversion.</p>
                     </div>
                     <!--/column -->
                 </div>
                 <!--/.row -->
-                <div class="row gx-lg-8 gx-xl-12 gy-6 text-center">
+                <div class="row gx-lg-8 gx-xl-12 gy-6 text-centr">
                     <div class="col-md-6 col-lg-4"> <!-- Adjusted column size from col-lg-3 to col-lg-4 -->
-                        <img src="./assets/img/icons/icons_suggested/Technical-audit.png" class="svg-inject icon-svg icon-svg-md text-violet mb-3" alt="" />
+                        <img src="./assets/img/icons/icons_suggested/Technical-audit.png"
+                            class="svg-inject icon-svg icon-svg-md text-violet mb-3" alt="" />
                         <h4 style="color: #3ac0d7;">Technical Audit</h4>
-                        <p class="mb-2 my_para textColor ">We conduct a technical audit of your website to reduce the size of excessive files, identify broken links, and make the website easily indexed on the search engine.</p>
+                        <p class="mb-2 my_para textColor ">We conduct a technical audit of your website to reduce the
+                            size of excessive files, identify broken links, and make the website easily indexed on the
+                            search engine.</p>
                     </div>
                     <!--/column -->
                     <div class="col-md-6 col-lg-4"> <!-- Adjusted column size from col-lg-3 to col-lg-4 -->
-                        <img src="./assets/img/icons/icons_suggested/Content-Optimization.png" class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
-                        <h4 style="color: #3ac0d7;">Content Optimization</h4>
-                        <p class="mb-2 my_para textColor ">We conduct thorough keyword research, implement  SEO best practices, and craft compelling copy to enhance visibility, drive traffic, and increase conversions.</p>
+                        <img src="./assets/img/icons/icons_suggested/Content-Optimization.png"
+                            class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
+                        <h4 style="color: #3ac0d7;" >Content Optimization</h4>
+                        <p class="mb-2 my_para textColor ">We conduct thorough keyword research, implement SEO best
+                            practices, and craft compelling copy to enhance visibility, drive <br> traffic, and increase
+                            conversions.</p>
                     </div>
                     <!--/column -->
                     <div class="col-md-6 col-lg-4"> <!-- Adjusted column size from col-lg-3 to col-lg-4 -->
-                        <img src="./assets/img/icons/icons_suggested/User-Experience.png" class="svg-inject icon-svg icon-svg-md text-leaf mb-3" alt="" />
+                        <img src="./assets/img/icons/icons_suggested/User-Experience.png"
+                            class="svg-inject icon-svg icon-svg-md text-leaf mb-3" alt="" />
                         <h4 style="color: #3ac0d7;">User Experience</h4>
-                        <p class="mb-2 my_para textColor ">We carry a user-centric approach while designing a website to make content aesthetic, easy, and accessible for the end user.</p>
+                        <p class="mb-2 my_para textColor ">We carry a user-centric approach while designing a website to
+                            make content aesthetic, easy, and accessible for the end user.</p>
                     </div>
                     <!--/column -->
                 </div>
@@ -320,99 +359,106 @@
             <!-- /.container -->
         </section>
         <!-- /section -->
-          <section class="wrapper bg-light" style="margin-top: -200px;">
+        <section class="wrapper bg-light" style="margin-top: -200px;">
             <div class="container py-14 py-md-16">
-              <div class="row mb-5">
-                <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
-                  <!-- <img src="./assets/img/icons/lineal/list.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" /> -->
-                  <h2 class="display-2 mb-4 px-lg-14 my_alignment2">Our Process for Website Development
-                    </h2>
+                <div class="row mb-5">
+                    <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
+                        <!-- <img src="./assets/img/icons/lineal/list.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" /> -->
+                        <h2 class="display-2 mb-4 px-lg-14 my_alignment2">Our Process for Website Development
+                        </h2>
 
-                </div>
-                <!-- /column -->
-              </div>
-              <!-- /.row -->
-              <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                  <div class="card me-lg-6">
-                    <div class="card-body p-6">
-                      <div class="d-flex flex-row">
-                        <div>
-                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img
-                              src="./assets/img/icons/icons_suggested/Analysis.png"
-                              class="svg-inject icon-svg solid-duo icon_color" alt="" /> </div>
-                        </div>
-                        <div>
-                          <h4 class="mb-1">Analysis </h4>
-                          <p class="mb-0">We analyze your needs to deeply understand your business objectives, target audience, and competitive landscape.</p>
-                        </div>
-                      </div>
                     </div>
-                    <!--/.card-body -->
-                  </div>
-                  <!--/.card -->
-                  <div class="card ms-lg-13 mt-6">
-                    <div class="card-body p-6">
-                      <div class="d-flex flex-row">
-                        <div>
-                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img
-                              src="./assets/img/icons/icons_suggested/Strategy.png"
-                              class="svg-inject icon-svg solid-duo icon_color" alt="" /> </div>
-                        </div>
-                        <div>
-                          <h4 class="mb-1">Strategy </h4>
-                          <p class="mb-0">We outline project milestones, deliverables, and timelines, ensuring alignment with your goals and budget.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/.card-body -->
-                  </div>
-                  <!--/.card -->
-                  <div class="card mx-lg-6 mt-6">
-                    <div class="card-body p-6">
-                      <div class="d-flex flex-row">
-                        <div>
-                          <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img
-                              src="./assets/img/icons/icons_suggested/Execute.png"
-                              class="svg-inject icon-svg solid-duo icon_color" alt="" /> </div>
-                        </div>
-                        <div>
-                          <h4 class="mb-1">Execution</h4>
-                          <p class="mb-0">Implement our strategic plan with precision and expertise, leveraging the latest technologies and industry best practices.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/.card-body -->
-                  </div>
-                  <!--/.card -->
+                    <!-- /column -->
                 </div>
-                <!--/column -->
-                <div class="col-lg-6">
-                  <!-- <h2 class="display-6 mb-3">How It Works?</h2> -->
-                  <p class="lead  fs-lg pe-lg-5 my_para textColor my_top_margin3">We follow a thorough  process to deliver tailored website solutions that meet expectations:</p>
-                  <p class=" textColor">Web development presents numerous challenges, including aligning with business objectives, analyzing current trends, and implementing user-friendly interfaces. Recognizing these hurdles helps in crafting effective strategies for enhancement.</p>
-                  <p class="mb-6  textColor">Our team is well-versed in addressing these complexities. We adhere to rigorous development methodologies, ensuring seamless modernization of web systems, regardless of their nature.</p>
-                  <!-- <a href="#" class="btn rounded-pill mb-0 allbtn">Learn More</a> -->
+                <!-- /.row -->
+                <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="card me-lg-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img
+                                                src="./assets/img/icons/icons_suggested/Analysis.png"
+                                                class="svg-inject icon-svg solid-duo icon_color" alt="" /> </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-1">Analysis </h4>
+                                        <p class="mb-0">We analyze your needs to deeply understand your business
+                                            objectives, target audience, and competitive landscape.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                        <div class="card ms-lg-13 mt-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img
+                                                src="./assets/img/icons/icons_suggested/Strategy.png"
+                                                class="svg-inject icon-svg solid-duo icon_color" alt="" /> </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-1">Strategy </h4>
+                                        <p class="mb-0">We outline project milestones, deliverables, and timelines,
+                                            ensuring alignment with your goals and budget.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                        <div class="card mx-lg-6 mt-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img
+                                                src="./assets/img/icons/icons_suggested/Execute.png"
+                                                class="svg-inject icon-svg solid-duo icon_color" alt="" /> </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-1">Execution</h4>
+                                        <p class="mb-0">Implement our strategic plan with precision and expertise,
+                                            leveraging the latest technologies and industry best practices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6">
+                        <!-- <h2 class="display-6 mb-3">How It Works?</h2> -->
+                        <p class="lead  fs-lg pe-lg-5 my_para textColor my_top_margin3">We follow a thorough process to
+                            deliver tailored website solutions that meet expectations:</p>
+                        <p class=" textColor">Web development presents numerous challenges, including aligning with
+                            business objectives, analyzing current trends, and implementing user-friendly interfaces.
+                            Recognizing these hurdles helps in crafting effective strategies for enhancement.</p>
+                        <p class="mb-6  textColor">Our team is well-versed in addressing these complexities. We adhere
+                            to rigorous development methodologies, ensuring seamless modernization of web systems,
+                            regardless of their nature.</p>
+                        <!-- <a href="#" class="btn rounded-pill mb-0 allbtn">Learn More</a> -->
+                    </div>
+                    <!--/column -->
                 </div>
-                <!--/column -->
-              </div>
-              <!--/.row -->
+                <!--/.row -->
             </div>
             <!-- /.container -->
-          </section>
-          <!-- /section -->
+        </section>
+        <!-- /section -->
         <footer class="wrapper pattern-wrapper bg-image section-frame "
             style="background-color: #3ac0d7; margin-top: 40px;">
             <!-- if we want to adjust pattern (data-image-src="./assets/img/pattern.png") -->
             <div class="container pb-13 pb-md-15">
-                <div class="card image-wrapper bg-full bg-image bg-overlay mt-n50p mx-md-5 rounded-xl overflow-hidden"
-                    data-image-src="./assets/img/photos/bg27.jpg">
-                    <div
-                        class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
-                        <h3 class="display-2 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white myclass text-center">We
-                            are trusted by over 5000+ clients.
-                            Join them now and grow your business.</h3>
-                        <a href="#" class="btn btn-lg btn-white rounded-xl mb-0 text-nowrap"
+                <div class="card bg-full bg-image  mt-n50p mx-md-5 rounded-xl overflow-hidden footer_bg_img footer_minimize_view"
+                data-image-src="./assets/img/demos/updated_bg_footer.png">
+                <div
+                  class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
+                  <h3 class="display-2 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white myclass footer_alignment textSize">We are trusted by over 5000+ clients.
+                    Join them now and grow your business.</h3>
+                        <a href="#" class="btn btn-lg btn-white rounded-xl mb-0 text-nowrap btnMoveUp"
                             style=" width: 118px; height: 40px; font-size: 13px;">Join Us</a>
                     </div>
                     <!--/.card-body -->
@@ -450,8 +496,8 @@
                                 <ul class="list-unstyled text-reset mb-0 lead my_para">
                                     <li><a href="#">Support</a></li>
                                     <li><a href="#">Get Started</a></li>
-                                    <li><a href="#">Terms of Use</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="termAndCondition.html">Terms of Use</a></li>
+                                    <li><a href="termAndCondition.html">Privacy Policy</a></li>
                                 </ul>
                             </div>
                             <!-- /.widget -->
@@ -488,7 +534,7 @@
             <!-- /.container -->
         </footer>
 
-
+<script src="form.js"></script>
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/theme.js"></script>
 </body>

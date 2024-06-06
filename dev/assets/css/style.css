@@ -885,10 +885,9 @@ progress {
   /* For desktop */
   @media (min-width: 768px) {
     .hero_image {
-      width: 500px; /* Set the width to 636px */
+      width: 800px; /* Set the width to 636px */
       height: auto; /* Allow the height to adjust proportionally */
       margin: 0px auto 20px; /* Center the image horizontally and add margin top and bottom */
-
       max-width: 100%; /* Set a maximum width */
     }
   }
@@ -896,6 +895,27 @@ progress {
   /* For mobile and tablet */
   @media (max-width: 767px) {
     .hero_image {
+      width: 100%; /* Set the width to 100% to fill the container */
+      max-width: none; /* Remove the maximum width constraint */
+      height: auto; /* Allow the height to adjust proportionally */
+      margin: 0 auto 20px; /* Center the image horizontally and add margin top and bottom */
+    }
+  }
+
+  /* For desktop */
+  @media (min-width: 768px) {
+    .home_page_hero{
+      width: 39rem !important; /* Set the width to 636px */
+      height: auto; /* Allow the height to adjust proportionally */
+      margin: 0px auto 20px; /* Center the image horizontally and add margin top and bottom */
+      max-width: 100%; /* Set a maximum width */
+      margin-left: 80px;
+    }
+  }
+
+  /* For mobile and tablet */
+  @media (max-width: 767px) {
+    .home_page_hero {
       width: 100%; /* Set the width to 100% to fill the container */
       max-width: none; /* Remove the maximum width constraint */
       height: auto; /* Allow the height to adjust proportionally */
@@ -925,6 +945,7 @@ progress {
     margin-left: 10px;
   }
 }
+
 
 
 
@@ -968,6 +989,7 @@ progress {
   .container-sm,
   .container {
     max-width: 540px;
+
   }
 }
 @media (min-width: 768px) {
@@ -8959,7 +8981,7 @@ fieldset:disabled .btn {
   overflow: auto !important;
 }
 .overflow-hidden {
-  overflow: hidden !important;
+  overflow: hidde !important;
   background-color: white;
 }
 .overflow-visible {
@@ -10299,7 +10321,7 @@ fieldset:disabled .btn {
 }
 /* For mobile devices */
 .custom_mt {
-  margin-top: 152px !important;
+  margin-top: 52px !important;
 }
 
 /* For tablets (e.g., iPad) */
@@ -33029,9 +33051,17 @@ header {
   position: relative;
 }
 .navbar {
-  width: 100%;
+  width: 102%;
   z-index: 1020;
 }
+
+@media (max-width: 992px) {
+  /* Apply the responsive margin-top here */
+  .navbar {
+    margin-top: -63px; /* Adjust this value as needed */
+  }
+}
+
 .navbar .container {
   position: relative;
 }
@@ -40942,8 +40972,8 @@ footer.bg-dark.angled.upper-start:before {
 }
 .my_para {
   font-size: 0.67rem;
-  text-align: justify;
-  word-spacing: -0.001rem;
+  text-align: left;
+  word-spacing: 0.11rem;
 
 }
 
@@ -40951,6 +40981,8 @@ footer.bg-dark.angled.upper-start:before {
   /* For tablets */
   .my_para {
     font-size: 0.5rem; /* Adjust the font size for tablets */
+    text-align: left;
+    word-spacing: 0.11rem;
   }
 }
 
@@ -40958,21 +40990,25 @@ footer.bg-dark.angled.upper-start:before {
   /* For mobile devices */
   .my_para {
     font-size: 0.8rem; /* Adjust the font size for mobile devices */
-    text-align:justify;
-    word-spacing: -0.01rem; /* Adjust word spacing as needed */
+    text-align: left;
+    word-spacing: 0.11rem;
   }
 }
 
 .my_para2 {
   font-size: 0.67rem;
-  text-align:justify;
-  word-spacing: -0.005rem;
+  /* text-align:justify;
+  word-spacing: -0.005rem; */
+  text-align: left;
+  word-spacing: 0.3rem;
 }
 
 @media only screen and (max-width: 768px) {
   /* For tablets */
   .my_para2 {
     font-size: 0.5rem; /* Adjust the font size for tablets */
+    text-align: left;
+    word-spacing: 0.3rem;
   }
 }
 
@@ -40980,8 +41016,10 @@ footer.bg-dark.angled.upper-start:before {
   /* For mobile devices */
   .my_para2 {
     font-size: 0.5rem; /* Adjust the font size for mobile devices */
-    text-align:justify;
-    word-spacing: -0.1rem; /* Adjust word spacing as needed */
+    /* text-align:justify;
+    word-spacing: -0.1rem; Adjust word spacing as needed */
+    text-align: left;
+    word-spacing: 0.3rem;
   }
 }
 h4{
@@ -41075,7 +41113,171 @@ h4{
   }
 }
 
+/* Responsive adjustments for different screen sizes */
+@media only screen and (max-width: 576px) {
+  /* Mobile screens */
+  .heading_3_cyber{
+    margin-top: -357px !important; /* Adjusted margin for mobile */
+  }
+}
 
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* Tablet screens */
+  .heading_3_cyber {
+    margin-top: -300px !important; /* Adjusted margin for tablets */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Large screens */
+  .heading_3_cyber {
+    margin-top: 25px; /* Adjusted margin for large screens */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Extra-large screens and above */
+  .heading_3_cyber {
+    margin-top: -250px !important; /* Adjusted margin for extra-large screens */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Small screens (overriding initial margin for small screens) */
+  .heading_3_cyber {
+    margin-top: 5px; /* Adjusted margin for small screens */
+  }
+}
+
+
+
+/* Responsive adjustments for different screen sizes */
+@media only screen and (max-width: 576px) {
+  /* Mobile screens */
+  .my_top_margin5 {
+    margin-top: -60px !important; /* Adjusted margin for mobile */
+    height: 50rem;
+
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* Tablet screens */
+  .my_top_margin5 {
+    margin-top: -40px !important; /* Adjusted margin for tablets */
+    height: 50rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Large screens */
+  .my_top_margin5 {
+    margin-top: -25px ; /* Adjusted margin for large screens */
+
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Extra-large screens and above */
+  .my_top_margin5 {
+    margin-top: -125px; /* Adjusted margin for extra-large screens */
+    height: 31rem;
+
+  }
+}
+
+/* Responsive adjustments for different screen sizes */
+@media only screen and (max-width: 576px) {
+  /* Mobile screens */
+  .my_top_margin6 {
+    margin-top: -30px !important; /* Adjusted margin for mobile */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Large screens */
+  .my_top_margin6 {
+    margin-top: -25px; /* Adjusted margin for large screens */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Extra-large screens and above */
+  .my_top_margin6 {
+    margin-top: -25px; /* Adjusted margin for extra-large screens */
+  }
+}
+
+/* Responsive adjustments for different screen sizes */
+@media only screen and (max-width: 576px) {
+  /* Mobile screens */
+  .my_top_margin7 {
+    margin-top: -30px !important; /* Adjusted margin for mobile */
+  }
+}
+
+/* Desktop screens */
+@media only screen and (max-width: 992px) {
+  .my_top_margin7 {
+    margin-top: -20px !important; /* Adjusted margin for desktop */
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Large screens */
+  .my_top_margin7 {
+    margin-top: -25px; /* Adjusted margin for large screens */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Extra-large screens and above */
+  .my_top_margin7 {
+    margin-top: -25px; /* Adjusted margin for extra-large screens */
+  }
+}
+
+/* Desktop screens */
+@media only screen and (max-width: 992px) {
+  .my_top_margin8 {
+    margin-top: -50px !important; /* Adjusted margin for desktop */
+  }
+}
+/* Responsive adjustments for different screen sizes */
+/* Desktop screens */
+@media only screen and (max-width: 992px) {
+  .my_top_margin9 {
+    margin-top: -50px !important; /* Adjusted margin for desktop */
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* Mobile screens */
+  .my_top_margin9 {
+    margin-top: -80px !important; /* Adjusted margin for mobile */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Large screens */
+  .my_top_margin9 {
+    margin-top: -25px; /* Adjusted margin for large screens */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Extra-large screens and above */
+  .my_top_margin9 {
+    margin-top: -25px; /* Adjusted margin for extra-large screens */
+  }
+}
+@media only screen and (max-width: 992px) {
+  .my_top_margin10 {
+    margin-top: -66px !important; /* Adjusted margin for desktop */
+  }
+}
+@media only screen and (max-width: 992px) {
+  .my_top_margin11 {
+    margin-top: -66px !important; /* Adjusted margin for desktop */
+  }
+}
 
 
 .my_top_margin3 {
@@ -41187,7 +41389,7 @@ h4{
   }
 }
 #ittcom{
- background-color:white;
+ background-color:white !important;
 }
 
 .my_alignment {
@@ -41343,8 +41545,13 @@ button[type="submit"]:hover {
   background-color: #6fbf60;
   color: white;
   width: 140px;
-   height: 40px;
+   height: 45px;
    font-size: 13px;
+
+}
+
+.allbtn:hover {
+  background-image: linear-gradient(45deg, #08aeea 0, #2af598 100%); /* Change the background color on hover */
 }
 .textColor{
   color:black;
@@ -41375,6 +41582,7 @@ button[type="submit"]:hover {
 
 background-color: rgba(238,242,253,255);
 box-shadow: 0 4px 8px rgba(10, 30, 10, 0.1);
+
 }
 
 
@@ -41382,7 +41590,7 @@ box-shadow: 0 4px 8px rgba(10, 30, 10, 0.1);
 /* Media query for desktop screens */
 @media (min-width: 1024px) {
   .for_home_page_footer_ml {
-      margin-left: 38px; /* Adjust the margin value as needed */
+      margin-left: 43px; /* Adjust the margin value as needed */
   }
 }
 
@@ -41395,5 +41603,340 @@ box-shadow: 0 4px 8px rgba(10, 30, 10, 0.1);
 @media (max-width: 767px) {
   .margin_adjustment2 {
     margin-top: 90px; /* Adjust the margin-top value as needed */
+  }
+}
+
+.my_margin_3{
+margin-top: -190px;
+}
+.my_margin_4{
+  margin-top: -250px;
+  }
+
+  @media (max-width: 768px) {
+    .my_para {
+      font-size: 16px; // Reducing the font size on smaller devices
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .wrapperbg {
+      margin-top: 110px;  /* Adjust the value based on your specific design needs */
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      margin-top: 67px; /* Adjust this value as needed */
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .margin-top-mobile {
+      /* margin-top: 50px; You can adjust this value as needed */
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .margin-top-mobile1 {
+      margin-top: 50px; /* You can adjust this value as needed */
+    }
+  }
+
+  .footer_alignment{
+    margin-top: -14px
+  }
+
+  .icons_bg{
+    background-image: url("../img/icons/update_icons/ICon-BG\ \(1\).png");
+  }
+
+  .icons_bg_section2_3{
+    background-image: url("../img/icons/update_icons/Last-2-section-BG.png");
+  }
+
+
+  .icons_bg_last_section{
+    background-image: url("../img/icons/update_icons/Last-Section-BG.png");
+  }
+
+
+  /* Define the keyframes for the fade-in and slide-down effect */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the .animationheader class */
+.animationheader {
+  animation: fadeInSlideDown 1s ease-out forwards;
+}
+
+.footer_bg_img{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+@media (max-width: 950px) {
+  .footer_minimize_view {
+    /* Decrease height */
+    width: 115%;
+    height: 5rem;
+    margin-left: -40px;
+    margin-bottom: 40px;
+  }
+
+  .btnMoveUp {
+    /* Decrease height */
+    margin-left: 370px;
+    margin-top: -88px;
+    width: 15% !important;
+    height: 17% !important;
+  }
+}
+
+/* Media query for tablets (768px to 1024px width) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer_minimize_view {
+    /* Adjust styles for tablets */
+    width: 100%;
+    height: 7rem; /* Adjust height for tablets */
+    margin-left: 0;
+    margin-bottom: 20px; /* Adjust margin-bottom for tablets */
+  }
+
+  .btnMoveUp {
+    /* Adjust styles for tablets */
+    margin-left: 0;
+    margin-top: -50px; /* Adjust margin-top for tablets */
+    width: 20% !important; /* Adjust width for tablets */
+    height: 10% !important; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 575px) {
+  .footer_minimize_view {
+    /* Adjust styles for smaller screens */
+    width: 100%; /* Adjust width as needed */
+    height: 6rem; /* Adjust height as needed */
+    margin-left: 0; /* Adjust margin as needed */
+    margin-bottom: 40px;
+  }
+
+  .btnMoveUp {
+    /* Adjust styles for smaller screens */
+    margin-left: 255px; /* Adjust margin as needed */
+    margin-top: -75px; /* Adjust margin-top as needed */
+  }
+}
+
+/* Media query for devices with screen size 360px width and 800px height */
+@media (max-width: 360px) and (max-height: 880px) {
+  .footer_minimize_view {
+    /* Adjust styles for specific screen size */
+    width: 100%; /* Adjust width as needed */
+    height: 7rem; /* Adjust height as needed */
+    margin-left: 0; /* Adjust margin as needed */
+    margin-bottom: 30px; /* Adjust margin-bottom as needed */
+  }
+
+  .btnMoveUp {
+    /* Adjust styles for specific screen size */
+    margin-left: 230px; /* Adjust margin-left as needed */
+    margin-top: -90px; /* Adjust margin-top as needed */
+  }
+}
+
+
+/* Default font size */
+.textSize {
+ /* ont-size: 16px;  Default font size for small desktop and above */
+}
+
+/* Small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .textSize {
+    font-size: 14px; /* Adjust font size for small mobile devices */
+  }
+}
+
+/* Middle mobile devices (between 481px and 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .textSize {
+    font-size: 16px; /* Adjust font size for middle mobile devices */
+  }
+}
+
+/* Large mobile devices (between 769px and 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .textSize {
+    /* font-size: 1rem !important; Adjust font size for large mobile devices */
+  }
+}
+
+/* Small desktop screens (between 1025px and 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .textSize {
+    /* font-size: 70px; Adjust font size for small desktop screens */
+  }
+}
+
+/* Middle desktop screens (between 1281px and 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .textSize {
+    font-size: 22px; /* Adjust font size for middle desktop screens */
+  }
+}
+
+/* Large desktop screens (between 1441px and 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .textSize {
+    font-size: 24px; /* Adjust font size for large desktop screens */
+  }
+}
+
+/* Extra large desktop screens (above 1920px) */
+@media (min-width: 1921px) {
+  .textSize {
+    font-size: 26px; /* Adjust font size for extra large desktop screens */
+  }
+}
+
+/* Tablet devices (768px to 1024px width) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .textSize {
+    font-size: 18px; /* Adjust font size for tablets */
+  }
+}
+/* minimize desktop devices (768px to 1024px width) */
+
+@media (max-width: 950px){
+  .textSize {
+    font-size: 1rem !important; /* Adjust font size for tablets */
+  }
+}
+
+
+/* Media query for extra large desktops (wider than 1200px) */
+@media screen and (min-width: 1200px) {
+  .terms-conditions_margin {
+    margin-top: 105px;
+  }
+}
+
+/* Media query for tablets (wider than 768px but narrower than 992px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .terms-conditions_margin {
+    margin-top: 8px;
+  }
+}
+
+/* Tablet devices (768px to 1024px width) */
+@media (min-width: 568px) and (max-width: 1200px) {
+  .terms-conditions_margin {
+    margin-top: 108px; /* Adjust font size for tablets */
+  }
+}
+/* Media query for mobile devices (wider than 576px but narrower than 768px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .terms-conditions_margin {
+    margin-top: 5px;
+  }
+}
+
+/* Media query for smaller mobile devices (up to 575px wide) */
+@media screen and (max-width: 575px) {
+  .terms-conditions_margin {
+    margin-top: 3px;
+  }
+}
+
+/* Media query for extra large desktops (wider than 1200px) */
+@media screen and (min-width: 1200px) {
+  .terms-conditions_bottom {
+    margin-bottom: 135px;
+  }
+}
+
+/* Media query for tablets (wider than 768px but narrower than 992px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .terms-conditions_margin {
+    margin-top: 8px;
+  }
+}
+
+/* Media query for mobile devices (wider than 576px but narrower than 768px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .terms-conditions_margin {
+    margin-bottom: 5px;
+  }
+}
+
+/* Media query for smaller mobile devices (up to 575px wide) */
+@media screen and (max-width: 575px) {
+  .terms-conditions_margin {
+    margin-bottom: 70px;
+  }
+}
+.custom-grid {
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info-box {
+  background-color: #e0f7ff;;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Default for all devices */
+.infrastructure_last_section_margin_top {
+  margin-top: 0px; /* Default margin-top, adjust as needed */
+}
+
+/* Desktop and laptop screens */
+@media (min-width: 1024px) {
+  .infrastructure_last_section_margin_top {
+      margin-top: -350px; /* Adjust if needed for larger screens */
+  }
+}
+
+/* Tablets in portrait and landscape */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .infrastructure_last_section_margin_top {
+      margin-top: -350px; /* Adjust if needed for tablets */
+  }
+}
+
+/* Mobile phones in landscape */
+@media (min-width: 480px) and (max-width: 767px) {
+  .infrastructure_last_section_margin_top {
+      margin-top: -450px; /* Adjust if needed for larger phones */
+      margin-bottom: -100px;
+  }
+}
+
+/* Mobile phones in portrait */
+@media (max-width: 479px) {
+  .infrastructure_last_section_margin_top {
+      margin-top: -440px; /* Adjust if needed for smaller phones */
+      margin-bottom: -50px;
   }
 }
